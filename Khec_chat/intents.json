@@ -1,0 +1,1716 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Hey there!",
+        "goodmorning",
+        "goodafternoon",
+        "goodevening",
+        "greeting"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, Welcome",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","C ya"],
+      "responses": [
+        "See you later, thanks for your query",
+        "Tata!Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure","Hope we help you to get proper info"]
+    },
+    {
+      "tag": "full form",
+      "patterns": [
+        "What is full form of khec",
+        "fullform",
+        "Khec stands for?",
+        "What is abbreviation for khec?"
+      ],
+      "responses": [
+        "Khwopa engineering college"
+      ]
+    },
+    {
+      "tag": "About user",
+      "patterns": [
+        "Do you know me?",
+        "What's my name?",
+        "What's my phoneno.",
+        "my address",
+        "my classroom",
+        "my section",
+        "my location",
+        "my",
+        "can you tell my name/parking/schooling",
+        "where I am from?"
+      ],
+      "responses": [
+        "Sorry i cannot recognize you till now..."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where it is located?",   
+        "Where it is situated?",
+        "Where it lies?",
+        "place",
+        "how can i reach there?" ,    
+        "Where are you from?",
+        "Where is the college ?",
+        "Is it in bhaktapur?",
+        "direction of college please!",
+        "Location of college please!",
+        "can you give me your location"
+      ],
+      "responses": [
+        "It is located at Libali, Bhaktapur - 8, Nepal",
+        "It is situated in Libali, Bhaktapur District, Nepal"
+      ]
+    },
+    {
+      "tag": "introduce",
+      "patterns": [
+        "Can you tell me about khec?",
+        "structure of khec",
+        "about khec",
+        "Please provide me some information about college",
+        "can i get more info about college?",
+        "Introduction please"
+      ],
+      "responses": [
+        "Khwopa is the prehistoric name of Bhaktapur, the abode of art and culture. Bhaktapur municipality is a pioneer to establish higher educational institutes by local governments in Nepal. Khwopa (Higher) Secondary School, established in 1999 A.D (2056 B.S.), was the first academic institute established by  Bhaktapur Municipality. Within two decades, Bhaktapur municipality has succeeded in establishing seven higher educational institutions."
+      ]
+    },
+    {
+      "tag": "establish",
+      "patterns": [
+        "When it was established?",
+        "when khec begin",
+        "when was this institude establish?",
+        "When it was started?"
+      ],
+      "responses": [
+        "It was established in 2001 BS",
+        "It was founded in 2001 BS"
+      ]
+    },
+    {
+      "tag": "facilities",
+      "patterns": [
+        "Is there any facilities?",
+        "Tell me something about college facilities",
+        "what type of facilities does college offer?",
+        "is there enough computer labs?",
+        "facility",
+        "is there enough facilities?"
+      ],
+      "responses": [
+        "Well - equipped and enough space laboratories, library with sufficient number of course book and reference books, multipurpose halls, sports, cafeteria and transportation",
+        "Multipurpose halls, sports, canteen, and transportation are all available, as well well-equipped laboratories, a library with a sufficient quantity of course books and reference books, and multipurpose halls"
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "Can you show me fee structure?",
+        "What is fee structure?",
+        "structure of fee",
+        "how much should i pay overall all/4/5 years?",
+        "what is final amount?"
+      ],
+      "responses": [
+        "According to 2078 B.S->Computer:Rs.6,75,160,     Elex:Rs.6,75,160,     Civil:Rs.6,75,160(+20k for survey),    architecture:Rs.8,43,950,    Earthquake:Rs.2,88,750  and Urban:Rs.2,88,750"
+      ]
+    },
+    {
+      "tag": "years",
+      "patterns": [
+        "how long is engineering?",
+        "What is study period of engineering?",
+        "Engineering study period",
+        "Duration"
+  
+      ],
+      "responses": [
+        "Computer:4 years,Elex:4 years,Civil:4 years,Archictecture:5 years,Earthquake:2 years,Urban:2 years,"
+      ]
+    },
+    {
+      "tag": "capacity",
+      "patterns": [
+        "Can you tell me enrollment capacity?",
+        "What is enrollment capacity in khec?"
+  
+      ],
+      "responses": [
+        "Computer enrollment capacity:48,Civil enrollment capacity:96,Elex enrollment capacity:48,architecture enrollment capacity:48,earthquake:20 and Urban:20"
+      ]
+    },
+    {
+      "tag": "computercapacity",
+      "patterns": [
+        "computer department enrollment capacity",
+        "enrollment capacity of computer",
+        "seat for computer",
+        "What is enrollment capacity of computer department?",
+        "what is student capcity in computer enginnering?",
+        "how many seats are available in computer",
+        "seats for computer engineering"
+      ],
+      "responses": [
+        "Computer enrollment capacity:48"
+      ]
+    },
+    {
+      "tag": "computeryears",
+      "patterns": [
+        "how long is computer engineering?",
+        "computer enginnering study period",
+        "duration of computer",
+        "What is study period of computer enginnering?",
+        "time for computer",
+        "when computer enginnering finished?",
+        "Computer Engineering Completed"
+      ],
+      "responses": [
+        "Study period of computer is:4 years."
+      ]
+    },
+    {
+      "tag": "civilyears",
+      "patterns": [
+        "how long is civil engineering?",
+        "civil enginnering study period",
+        "duration of civil",
+        "What is study period of civil enginnering?",
+        "time for civil",
+        "when civil enginnering finished?",
+        "Civil Engineering Completed"
+      ],
+      "responses": [
+        "Study period of civil is:4 years."
+      ]
+    },
+    {
+      "tag": "Architectureyears",
+      "patterns": [
+        "how long is Architecture engineering?",
+        "Architecture enginnering study period",
+        "duration of architecture",
+        "What is study period of Architecture enginnering?",
+        "time for Architecture",
+        "when architecture finished?",
+        "Architecture Completed"
+      ],
+      "responses": [
+        "study period of architecture is:5 years."
+      ]
+    },
+    {
+      "tag": "electronicsyears",
+      "patterns": [
+        "how long is Electronics & Communication engineering?",
+        "Electronics & Communication enginnering study period",
+        "duration of electronics",
+        "What is study period of Electronics & Communication enginnering?",
+        "time for electronics",
+        "when electronics enginnering finished?",
+        "Electronics Engineering Completed"
+      ],
+      "responses": [
+        "study period:4"
+      ]
+    },
+    {
+      "tag": "earthquakeyears",
+      "patterns": [
+        "how long is master in earthquake engineering?",
+        "master in earthquake enginnering study period",
+        "duration of earthquake",
+        "What is study period of master in earthquake enginnering?",
+        "time for earthquake",
+        "when earthquake finished?",
+        "Earthquake Completed"
+      ],
+      "responses": [
+        "study period of architecture is:2years."
+      ]
+    },
+    {
+      "tag": "urbanyears",
+      "patterns": [
+        "how long is master in Urban Design & Conservation engineering?",
+        "master in Urban Design & Conservation enginnering study period",
+        "duration of urban",
+        "What is study period of master in  Urban Design & Conservation enginnering?",
+        "time for urban",
+        "when urban finished?",
+        "Urban Completed"
+      ],
+      "responses": [
+        "study period period of urban is:2years."
+      ]
+    },
+    {
+      "tag": "civilcapacity",
+      "patterns": [
+        "civil engineering enrollment capacity",
+        "enrollment capacity of civil engineering",
+        "capacity of civil",
+        "What is enrollment capacity of civil engineering?",
+        "civil capacity",
+        "what is student capacity in civil enginnering?"
+      ],
+      "responses": [
+        "enrollment capacity:96"
+      ]
+    },
+    {
+      "tag": "specify with it",
+      "patterns": [
+        "when was it completed?",
+        "how many time it takes to complete?",
+        "what does it mean?",
+        "what things comes under it?",
+        "can you tell it?"
+      ],
+      "responses": [
+        "Please ask question with proper specification of fields like computer/elex/civil/archi ..."
+      ]
+    },
+    {
+      "tag": "Architecturecapacity",
+      "patterns": [
+        "Architecture engineering enrollment capacity",
+        "enrollment capacity of Architecture engineering",
+        "What is enrollment capacity of Architecture engineering?",
+         "architecture",
+         "what is student capacity in architecture enginnering?"
+      ],
+      "responses": [
+        "enrollment capacity:48"
+      ]
+    },
+    {
+      "tag": "electronicscapacity",
+      "patterns": [
+        "Electronics & Communication or elex  engineering enrollment capacity",
+        "enrollment capacity of Electronics & Communication engineering",
+        "enrollment capacity of elex engineering",
+        "What is enrollment capacity of elex or Electronics & Communication engineering?",
+        "electronic and communication",
+        "what is student capacity in electronics and communication enginnering?"
+  
+      ],
+      "responses": [
+        "enrollment capacity:48"
+      ]
+    },
+    {
+      "tag": "Earthquakecapacity",
+      "patterns": [
+        "master in Earthquake department enrollment capacity",
+        "enrollment capacity of master in  Earthquake",
+        "What is enrollment capacity of master in  Earthquake engineering?",
+        "earthquake engineering",
+        "what is student capacity in earthquake enginnering?"
+  
+      ],
+      "responses": [
+        "enrollment capacity:20"
+      ]
+    },
+    {
+      "tag": "Urbancapacity",
+      "patterns": [
+        "master in Urban Design & Conservation department enrollment capacity",
+        "enrollment capacity of master in Urban Design & Conservation",
+        "What is enrollment capacity of master in  Urban Design & Conservation  engineering?",
+        "Urban Design & Conservation department",
+        "what is student capacity in Urban Design & Conservation enginnering?"
+  
+      ],
+      "responses": [
+        "enrollment capacity:20"
+      ]
+    },
+    {
+      "tag": "computerfee",
+      "patterns": [
+        "computer engineering fee",
+        "fee structure of computer engineering",
+        "What is fee structure of computer engineering?",
+        "what is amount for studying computer engineering in khec?"
+      ],
+      "responses": [
+        "Rs.6,75,160 according to 2078 B.S"
+      ]
+    },
+    {
+      "tag": "electronicfee",
+      "patterns": [
+        "electronics and communication engineering fee",
+        "fee structure of elex and comm. engineering",
+        "What is fee structure of electronics engineering?",
+        "what is amount for studying electronics and communication engineering in khec?"
+  
+      ],
+      "responses": [
+        "Rs.6,75,160 according to 2078 B.S"
+      ]
+    },
+    {
+      "tag": "civilfee",
+      "patterns": [
+        "Civil department fee",
+        "fee structure of Civil",
+        "What is fee structure of civil engineering?",
+        "what is amount for studying civil engineering in khec?"
+        
+  
+      ],
+      "responses": [
+        "Rs.6,75,160(+20k for survey camp) according to 2078 B.S"
+      ]
+    },
+    {
+      "tag": "architecturefee",
+      "patterns": [
+        "architecture engineering fee",
+        "fee structure of architecture engineering",
+        "What is fee structure of architecture engineering?",
+        "what is amount for studying architecture engineering in khec?"
+  
+      ],
+      "responses": [
+        "Rs.8,43,950 according to 2078 B.S"
+      ]
+    },
+    {
+      "tag": "Earthquakefee",
+      "patterns": [
+        "master in  Earthquake engineering fee",
+        "fee structure of master in  Earthquake engineering",
+        "What is fee structure of master in Earthquake engineering?",
+        "what is amount for studying earthquake engineering in khec?"
+  
+      ],
+      "responses": [
+        "Rs.2,88,750 according to 2078 B.S"
+      ]
+    },
+    {
+      "tag": "Urbanfee",
+      "patterns": [
+        "master in Urban Design & Conservation engineering fee ",
+        "fee structure of master in  Urban Design & Conservation engineering",
+        "What is fee structure of master in  Urban Design & Conservation engineering?",
+        "what is amount for studying urban engineering in khec?"
+  
+      ],
+      "responses": [
+        "Rs.2,88,750 according to 2078 B.S"
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How do i contact with college?",
+        "what is number for college?",
+        "contact number please",
+        "contact ",
+        "phone no.",
+        "Can you please provide me phone number?",
+        "Can you please provide me contact number?"
+      ],
+      "responses": [
+        "You can contact through these number:Ph-01: +977-1-5122098 Ph-02: +977-1-5122094",
+        "Ph-01: +977-1-5122098 Ph-02: +977-1-5122094 are the contact numbers"
+      ]
+    },
+    {
+      "tag": "objectives",
+      "patterns": [
+        "What is objective of this college?",
+        "Why this college is established?",
+        "What is motive behind establishment of this college?"
+      ],
+      "responses": [
+        "It is Dedicated To Country & People",
+        "To produce highly skilled engineers/architects that will have blends of both indigenous and modern-day technologies"
+      ]
+    },
+    {
+      "tag": "affilation",
+      "patterns": [
+        "Are Khec and khce are same",
+        "Khec vs khce",
+        "Difference between Khec and khce"
+      ],
+      "responses": [
+        "No,KhEC is affiliated to Purbanchal University & KhCE is affiliated to Tribhuvan University",
+        "They are different in affilation"
+      ]
+    },
+    {
+      "tag": "department",
+      "patterns": [
+        "How many engineering departments are there in Khwopa Engineering College?",
+        "Can i get info about engineering department?",
+        "how many department are there?",
+        "What type of department are available there?",
+        "What are programs offered by college?"
+      ],
+      "responses": [
+        "There are 6 department/Programs:1. Department of Computer Engineering 2. Department of Civil Engineering 3. Department of Electronics and Communication  Engineering  4.Department of in  Architecture 5.ME Earthquake 6.MSc Urban Design & Conservation"
+        ]
+    },
+    {
+      "tag": "purpose",
+      "patterns": [
+        "What can you do?",
+        "Who are you?",
+        "What are you here for?",
+        "Are you bot?",
+        "What is your name?",
+        "Is your name chatbot?"
+      ],
+      "responses": [
+        "I am khwopa engineering college chatbot",
+        "Undoublty,I am chatbot",
+        "I am bot named as khec-chatbot"
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "what about hostel?",
+        "Can you tell me about hostel facilities?",
+        "Is there any hostel facility in college?"
+      ],
+      "responses": [
+        "No, there is not such  facility. But there are several private hostels nearby.",
+        "Sorry to say that there is no such hostel facility but you can find nearby easily"
+      ]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "What about library?",
+        "Can you tell me about library?",
+        "Is there any library facitlity in college?",
+        "where can i get some books?",
+        "can i borrow books from college"
+      ],
+      "responses": [
+        "There is well mannered library inside the college with good environment where we can get subject related as well as general knowledge books and we can lend upto 7 different books till vaild date"
+      ]
+    },
+    {
+      "tag": "canteen",
+      "patterns": [
+        "Is there canteen available?",
+        "Where can i get some quality foods?",
+        "Is there canteen facilities",
+        "Do khec have canteen?",
+        "Is canteen food is proper / tasty?",
+        "Do you have quality food item canteen?",
+        "What are the meal plan options?",
+        "How’s the food?"
+      ],
+      "responses": [
+        "There is well mannered and hygenice canteen inside the college with good environment and quality fresh food",
+        "Foods are available in reasonable price in khec canteen which are fresh and quality"
+      ]
+    },
+    {
+      "tag": "transportation",
+      "patterns": [
+        "Is there transportation facilities available?",
+        "Is there college bus available?",
+        "Bus facilities?",
+        "Do khec have transportation?",
+        "when college bus leave from college",
+        "At what time college bus leave?",
+        "Is there bus facilties?"
+      ],
+      "responses": [
+        "Yes,College bus are available and usually leave from college at 2:10 pm",
+        "Transportation facilities are available in reasonable price and usually leave from college at 2:10 pm"
+      ]
+    },
+    {
+      "tag": "busroute",
+      "patterns": [
+        "What is route of college bus?",
+        "route please",
+        "Can i know bus route?",
+        "Which route does bus take?",
+        "how can i reach there?",
+        "bus facility",
+        "how can i get to college?",
+        "Tell me the way to reach college?"
+      ],
+      "responses": [
+        "For this please concerned to respective department of college",
+        "Route are determined by college so please concerned to college department"
+      ]
+    },
+    {
+      "tag": "waytocollege",
+      "patterns": [
+        "how can i reach there?",
+        "how can i get to college?",
+        "Tell me the way to reach college?",
+        "how can i get college from banepa?"
+      ],
+      "responses": [
+        "Yes, you can reach from koteswor,banepa,mulpani,thali,new baneshowor etc"
+      ]
+    },
+
+    {
+      "tag": "destination",
+      "patterns": [
+        "how can i reach khec?",
+        "how can i reach there",
+        "Tell me the direction to reach college",
+        "way to reach khec college"
+      ],
+      "responses": [
+        "first reach to koteshwor via new baneshwor or sinamangal then---jadibuti--kausaltar--old thimi--radhey-radhey--suryabinayak--jagati--libali",
+        "first reach to koteshwor via new baneshwor or sinamangal then---jadibuti--pepsicola--puranothimi--siddhpokhari--kamalbinayak---chyamasingh--libali "
+      ]
+    },
+    {
+      "tag": "counsel",
+      "patterns": [
+        "Does college conduct any carrer based counselling program?",
+        "What about counselling program?",
+        "counsel",
+        "Is there any counselling program from college?"
+      ],
+      "responses": [
+        "Yes, counselling programs are conducted from time to time. Experienced professionals in the respective fields are invited for their valuable suggestions and sharing their working experiences with the students.",
+        "Ofcourse yes",
+        "Undoubtly yes"
+      ]
+    },
+    {
+      "tag": "practicals",
+      "patterns": [
+        "How about pratical?",
+        "How students are involved in practical field of their respective courses?",
+        "Can you tell me about college pratical?"
+      ],
+      "responses": [
+        "College organizes different expos and exhibition at certain intervals for improving students' practical skills in their fields. Students also get involved and participate in different competitions organized by various organizations of their respective fields.",
+        "Practical are organized weekly according to their respective courses"
+      ]
+    },
+    {
+      "tag": "extraclass",
+      "patterns": [
+        "Can i get extra classes?",
+        "how about extra classes?",
+        "Is there extra class available?",
+        "Is there any facility of extra classes?"
+      ],
+      "responses": [
+        "Yes, it is possible to get extra classes if requested by a group of students",
+        "As per requirement of time and situation,extra classes are conducted"
+      ]
+    },
+    {
+      "tag": "exchange",
+      "patterns": [
+        "Can we change the running department?",
+        "Can departent be switched?",
+        "What about department exchange?"
+      ],
+      "responses": [
+        "Yes, in certain circumstances if it is timely attempted. For instance, in the case of  departments like BE Computer and BE Electronics and Communication one can change one's running department within  fixed time of their course start. It also applies to other departments if it is early.",
+        "As per situation,department can be exchanged"
+      ]
+    },
+    {
+      "tag": "meeting",
+      "patterns": [
+        "Is parent meeting conducted timely?",
+        "What about parent meeting?"
+        
+      ],
+      "responses": [
+        "Yes, it is conducted timely on the requirement basis.",
+        "Ofcourse,why not?"
+      ]
+    },
+    {
+      "tag": "deposite",
+      "patterns": [
+        "When deposite can be funded?",
+        "What about deposite fund?"
+        
+      ],
+      "responses": [
+        "Deposite can be refunded only after passing out from the college",
+        "Only after graduation from college can you get your deposit back."
+      ]
+    },
+    {
+      "tag": "interview",
+      "patterns": [
+        "What type of scholarship interview is taken?",
+        "In what topic question are asked in scholarship interview?",
+        "What type of question are asked in interview"
+        
+      ],
+      "responses": [
+        "Student should describe his/her family and financial background and must provide the valid reasoning for the scholarship",
+        "The student must detail his or her family and financial background, as well as present a compelling argument for receiving the award"
+      ]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "Is there scholarship available?",
+        "Are there scholarship?",
+        "What student should do to get scholarship?",
+        "Does college provide any scholarship?",
+        "Does Khwopa Engineering College offer scholarships?",
+        "What percentage of students receive grants and/or scholarships?"
+        
+      ],
+      "responses": [
+        "Student should fill the form with all their required description and documents and also must give an interview to be candidate for scholarship",
+        "College provides full or partial scholarships for diligent and poor students. It also provides scholarships on the basis of  academic performance of each semester",
+        "Some scholarships are awarded based on merit, others based on financial need, and others may have a combination of both or none. There are many other scholarships where your merit and need are not a factor"
+      ]
+    },
+    {
+      "tag": "transfer",
+      "patterns": [
+        "What about transfer?",
+        "Can i get transferred or transfer from another college?" 
+      ],
+      "responses": [
+        "Yes, you can if you have the transfer certificate along with all other necessary documents from the college you are being transferred from. Without the necessary documents you cannot get the permission from the university and cannot get admitted to the college",
+        "With necessary document and valid reason, you can"
+      ]
+    },
+    {
+      "tag": "internship",
+      "patterns": [
+        "What about internship?",
+        "Does college provide any internship?",
+        "Is there any chances of internship from college?",
+        "What are the work-study opportunities?",
+        "Are there opportunities to build leadership skills on campus?",
+        "Does your school have a co-op program?",
+        "Are internships available?",
+        "Are there opportunities to build leadership skills on college?"
+      ],
+      "responses": [
+        "Yes, college provides internship programs for the students who are better at their respective fields",
+        "Yes, internship programs are available in college for students who excellence in their fields"
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "what is procedure for online payment?",
+        "Is there online payment?",
+        "Can we pay from online?"
+      ],
+      "responses": [
+        "Yes, you can pay through E-sewa or Connect-IPS or even you can send payment bank vhoucher to college email",
+        "Yes, you can pay through E-sewa or Connect-IPS, or you can send a bank vhoucher to the college's email address"
+      ]
+    },
+    {
+      "tag": "Email",
+      "patterns": [
+        "what is Email of college",
+        "Can i get email of college?"
+      ],
+      "responses": [
+        "info@khec.edu.np",
+        "kbpancha@gmail.com"
+      ]
+    },
+    {
+      "tag": "Other",
+      "patterns": [
+        "what are OTHER FEATURES of khec college",
+        "Can i know OTHER FEATURES of khec college?"
+      ],
+      "responses": [
+        "Passed Out Students' Record, Students form various districts are indexed as other feature of our college"
+      ]
+    },
+    {
+      "tag": "Scheme",
+      "patterns": [
+        "what is SCHOLARSHIP SCHEME FOR BE/B.ARCH in khec college",
+        "Can i know info about SCHOLARSHIP SCHEME FOR BE/B.ARCH in khec college?",
+        "Does college give athletic scholarships?",
+        "what are requirements for scholarship?"
+      ],
+      "responses": [
+        "Full scholarships for the applicants of each program with minimum 75% in +2 (Science) or I.Sc. or Diploma in Engineering, and scoring the highest marks in entrance exam"
+      ]
+    },
+    {
+      "tag": "OrganizationalStructure",
+      "patterns": [
+        "what is Organizational Structure of khec college",
+        "Can i know Organizational Structure of college?"
+      ],
+      "responses": [
+        "Organizational Structure of khec is: 1.khwopa enginnering college 2.College management committee 3.Chairman 4.Principal 5.Vice principal 6.Administration(General and Academic) [for details, visit this link:https://khec.edu.np/site/organizational_structure.html]"
+        
+      ]
+    },
+    {
+      "tag": "vision",
+      "patterns": [
+        "what is vision of khec college",
+        "Can i know vision of khec college?"
+      ],
+      "responses": [
+        "The vision of Khwopa Engineering College (KhEC) is to establish Bhaktapur city as the Centre of Academic Excellence and intellectualize the society through engineering knowledge"
+      ]
+    },
+    {
+      "tag": "mission",
+      "patterns": [
+        "what is mission of khec college",
+        "Can i know mission of khec college?"
+      ],
+      "responses": [
+        "With a distant vision of maintaining Bhaktapur's hard-won glory, KhEC provides outstanding platform for students and scholars that produce world-wide competing manpower in the field of engineering and architecture"
+      ]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "What are services are provided by college?",
+        "Is there any services provided by college?",
+        "What advising and support services are available?"
+      ],
+      "responses": [
+        "Various Programs and Workshops are organized timely to motivate the students. Apart from this, councelling facility is provided to help the students to grab the right path",
+        "Various programs and workshops are held on a regular basis to keep pupils motivated. Aside from that, counseling is available to assist students in choosing the proper course"
+      ]
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+        "How can i get admitted?",
+        "What are the procedure for admission?",
+        "Steps for admission"
+      ],
+      "responses": [
+        "Student must fill up entrance form and take the entrance exam conducted by Purbanchal University. If student passes the entrance, he/she will be eligible for interview. After students are approved from interview ,then they can submit their admission fee in account section and submit other required documents in administration section",
+        "After entrance exam ,First you are called for interview. Within 2-3 days of interview you should submit admission fee based on availability of seats because the seats are filled by the procedure of First Come First Basis Admission",
+        "After entrance exam ,You will be called for an interview first. Within 2-3 days of the interview, you must submit an admission fee based on seat availability, as seats are filled on a first-come, first-served basis"
+      ]
+    },
+    {
+      "tag": "entrance",
+      "patterns": [
+        "entrance exam info please?",
+        "What are the procedure for giving entrance exam?",
+        "Steps for entrance exam",
+        "How easy or difficult is it to enroll in the courses you need?"
+      ],
+      "responses": [
+        "In order to start off Admission in Khwopa Engineering College, first of all fill up the Entrance Exam Form and submit it along with the relevant documents & appear in Entrance Examination given by Purbanchal University"
+      ]
+    },
+    {
+      "tag": "curriculum",
+      "patterns": [
+        "Is there any extra curriculum activities?",
+        "Is there any sport event?",
+        "What extracurricular opportunities are available?",
+        "What extra curriculum activities are conducted by college?"
+      ],
+      "responses": [
+        "Indoor games competitions, like Chess and Table Tennis, are conducted in summer season, and outdoor games competitions, like Badminton and Football are conducted in winter season. Any student of any level can take part in them",
+        "Various Indoor as well as Outdoor are conducted timely"
+      ]
+    },
+    {
+      "tag": "uniform",
+      "patterns": [
+        "Is uniform complusory?",
+        "What about uniform?",
+        "Tell me about uniform"
+      ],
+      "responses": [
+        "Yes, it is compulsory to be in uniform. Student without uniform is not eligible to attend the class at any cost",
+        "Very strictly complusory to attend the class"
+      ]
+    },
+    {
+      "tag": "forms",
+      "patterns": [
+        "form",
+        "Can i get online form?",
+        "Do you have online form?"
+      ],
+      "responses": [
+        "No, sorry you have to visit Admission Counter for Application Form",
+        "Still in progress to make online form facilities "
+      ]
+    },
+    {
+      "tag": "requirement",
+      "patterns": [
+        "Who can we apply for studying in college?",
+        "what are the requirement for applying?",
+        "how can i join the bachleor?",
+        "What are the academic requirements to qualify for the honors college?"
+      ],
+      "responses": [
+        "Student should pass B.E./B.Arch. Entrance Examination conducted by PU and must have completed I.Sc. or +2 (Science) or Diploma in Engineering (3 years) or equivalent with minimum 45% or 'C' grade in all subjects with minimum 2.00 GPA",
+        "Those who have completed Diploma in Civil or Computer or Architecture or passed +2 level in science can apply only after passing the entrance exam conducted by Purbanchal  University",
+        "Those who have obtained a diploma in civil, computer, or architecture, or who have passed the +2 level in science, can apply only after completing the Purbanchal University admission exam"
+      ]
+    },
+    {
+      "tag": "field of course",
+      "patterns": [
+        "show me available courses",
+        "What courses are available right now?",
+        "Can i get course information?",
+        "which faculty do you teach?",
+        "What type of courses are available there?"
+      ],
+      "responses": [
+        "1. M.E in Earthquake Engineering 2. M.E in Urban Design and Conservation 3. Bachelor in  Computer  Engineering 4. Bachelor in  Civil Engineering 5. Bachelor in  Electronic  and  Communication  Engineering 6. Bachelor in  Architecture "
+        ]
+    },
+    {
+      "tag": "online courses",
+      "patterns": [
+        "Is there online courses facilities?",
+        "Is there online courses running in this pandemic?",
+        "Can i get online course?"
+      ],
+      "responses": [
+        "Yes,Online courses are running",
+        "Not matter what, online courses always runs "
+        
+      ]
+    },
+    {
+      "tag": "attendance",
+      "patterns": [
+        "Why is it important to attend my college classes?",
+        "Is attendance is necessary?",
+        "Can't i study at home?"
+      ],
+      "responses": [
+        "Attendance is one of the important factor for your internal marks, apart from that learning from professors may increase your knowledge than learning by yourself. Also attending class is more beneficial than wasting your leisure time",
+        "Attendance is a crucial aspect in your internal grades, and studying from professors can help you get more knowledge than learning on your own. Attending class is also preferable to waste your free time"
+      ]
+    },
+    {
+      "tag": "best",
+      "patterns": [
+        "Why to choose khec?",
+        "Is khec better than other enginnering college?",
+        "Give me reason to choose khec",
+        "why khec?"
+      ],
+      "responses": [
+        "Because it is dedicated to the country and people, with sound theoretical and practical knowledge, competence and skill.",
+        "Home for Quality higher education with an affordable fee ",
+        "Backed and guided by experienced professors and invites subject experts and lecturers",
+        "Regular classes, in-depth practical assignments, field studies, excursions and report writing and internal examinations which are recipes for the success of every student, are carefully managed."
+      ]
+    },
+    {
+      "tag": "comeback",
+      "patterns": [
+        "great!",
+        "i got it!",
+        "wow",
+        "awesome",
+        "hehe",
+        "Yes",
+        "it was good",
+        "it was excellent"
+      ],
+      "responses": [
+        "Yeah haha",
+        "Amazing isn't it? Place more query for more info"
+      ]
+    },
+    {
+      "tag": "HOD",
+      "patterns": [
+        "Who is HOD?",
+        "hod of khec?",
+        "hod of khwopa",
+        "tell me about HOD?"
+      ],
+      "responses": [
+        "\nComputer\n=>Respected Er. Bikash Chawal Sir,\nElex\n=>Respected Er. Yogesh Bajracharya sir,\nCivil\n=>Respected Er. Amit Shankar Ranjit Sir,\nArchitecture\n=>Respected Ar. Rijina Bajracharya mam,\nEarthquake\n=>Respected Dr. Manjip Shakya sir,\nScience And Humanities\n=>Respected  Mr. Naba Raj Budhathoki sir"
+      ]
+    },
+    {
+      "tag": "computer_head",
+      "patterns": [
+        "Who is HOD of computer department?",
+        "computer hod",
+        "Who is computer department HOD?"
+      ],
+      "responses": [
+        "Respected Er. Bikash Chawal Sir"
+      ]
+    },
+    {
+      "tag": "civil_head",
+      "patterns": [
+        "Who is HOD of civil department?",
+        "civil hod",
+        "Who is civil department HOD?"
+      ],
+      "responses": [
+        "Respected Er. Amit Shankar Ranjit Sir"
+      ]
+    },
+    {
+      "tag": "eletronic_head",
+      "patterns": [
+        "Who is HOD of elex department?",
+        "electronic hod",
+        "Who is elex department HOD?"
+      ],
+      "responses": [
+        "Respected Er. Yogesh Bajracharya sir"
+      ]
+    },
+    {
+      "tag": "architecture_head",
+      "patterns": [
+        "Who is HOD of architecture department?",
+        "architecture hod",
+        "Who is architecture department HOD?"
+      ],
+      "responses": [
+        "Respected Ar. Rijina Bajracharya mam"
+      ]
+    },
+    {
+      "tag": "earthquake_head",
+      "patterns": [
+        "Who is HOD of EARTHQUAKE ENGINEERING?",
+        "earthquake hod", 
+        "Who is EARTHQUAKE ENGINEERING HOD?"
+      ],
+      "responses": [
+        "Respected Dr. Manjip Shakya sir"
+      ]
+    },
+    {
+      "tag": "SCIENCEandHUMANITIES_head",
+      "patterns": [
+        "Who is HOD of SCIENCE & HUMANITIES?",
+        "science and technology hod",
+        "Who is SCIENCE & HUMANITIES HOD?"
+      ],
+      "responses": [
+        "Respected  Mr. Naba Raj Budhathoki sir"
+      ]
+    },
+    {
+      "tag": "FAQS",
+      "patterns": [
+        "what are frequently asked question?",
+        "FAQS"
+      ],
+      "responses": [
+        "\nFee structure,\ndifferent facililties,\nLocation,\nAbout college,\nScholarship"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "electiveCourses",
+      "patterns": [
+        "what are elective courses available in khec?",
+        "Is there elective courses available in college?",
+        "elective"
+      ],
+      "responses": [
+        "Of which department?(in format like: elective courses for ............engineering)",
+        "Can you specify the department?(in format like: elective courses for ............engineering)"
+      ]
+    },
+    {
+      "tag": "computerelectiveCourses",
+      "patterns": [
+        "what are elective courses available in khec for computer engineering?",
+        "Is there elective courses avialable in college for computer engineering?",
+        "elective courses for computer engineering"
+      ],
+      "responses": [
+        "Information Security, Dot Net Programming, Image processing & pattern recognition, Compiler Design, Data Mining and Warehouse, Mobile Computing,System Administration, E-governance, GIS, E- commerce,JAVA programming,Distributed Processing,Database Programming"
+      ]
+    },
+    {
+      "tag": "civilelectiveCourses",
+      "patterns": [
+        "what are elective courses available in khec for civil engineering?",
+        "Is there elective courses available in college for civil engineering?",
+        "elective courses for civil engineering"
+      ],
+      "responses": [
+        "Computational Techniques,Solid Waste Management,Bio Engineering,Transportation Planning & Management,Environmental impact Assessment (EIA),Structural Dynamics,Ground Water Engineering,Micro Hydropower,Hill Irrigataion,Geographical Information System (GIS),Rock Engineering,Rock Slope Engineering,Design of RC Bridges,Seismic Resistant Design of Structures"
+      ]
+    },
+    {
+      "tag": "ArchitectureelectiveCourses",
+      "patterns": [
+        "what are elective courses available in khec for Architecture?",
+        "Is there elective courses available in college for Architecture?",
+        "elective courses for Architecture"
+      ],
+      "responses": [
+        "Vernacular Architecture,Low cost Housing,Energy Efficient Building Design,Nepalese Architecture in Kathmandu Valley"
+      ]
+    },
+    {
+      "tag": "internalmarks",
+      "patterns": [
+        "How internal marks are evaluated?",
+        "what is total internal marks?",
+        "Is there any marks for assignments?",
+        "is there Class Perfomance marks?"
+      ],
+      "responses": [
+        "Mainly internal marks is either 20 or 25 where it is evaluated on the basis of:1.Class Perfomance 2.Assignmnets 3.Attendance 4.Exam performance 5.Pratical exams and lab report and teacher evalution too"
+      ]
+    },
+    {
+      "tag": "Parking",
+      "patterns": [
+        "Can i take bike to college?",
+        "can i take my own transpotation to college?",
+        "Is there Praking area in college?",
+        "can i park there?",
+        "availability of bike parking?",
+        "is there parking facilities?"
+      ],
+      "responses": [
+        "Yes!There is enough space for parking",
+        "Parking is available there"
+      ]
+    },
+    {
+      "tag": "Principal",
+      "patterns": [
+        "Can i know pricipal of college?",
+        "who is principal of college?",
+        "who is head of college?",
+        "What is name of principal?"
+      ],
+      "responses": [
+        "Respected Er.Sujan Maka sir"
+      ]
+    },
+    {
+      "tag": "VicePrincipal",
+      "patterns": [
+        "Can i know vice pricipal of college?",
+        "who is vice pricipal of college?",
+        "What is name of vice-pricipal?"
+      ],
+      "responses": [
+        "Respected Er.Rabindra phoju sir"
+      ]
+    },
+    {
+      "tag": "holiday",
+      "patterns": [
+        "when do student get holiday?",
+        "is there holiday in saturday?"
+      ],
+      "responses": [
+        "As saturday is holiday beside that, on the occassion of festival or any strike or summer/winter season college will provide proper notice on college website and facebook pages"
+      ]
+    },
+    {
+      "tag": "teacher",
+      "patterns": [
+        "Is there quality good teacher in khec?",
+        "What is nature of teacher in khec?",
+        "Are teacher qualified and friendly?",
+        "What type of teacher are there?",
+        "What tutoring services do you have?",
+        "Are professors available for research with students?"
+      ],
+      "responses": [
+        "There is no doubt on quality nature of teacher",
+        "All teacher are well qaulified and expereinced in this field with extra knowledge too",
+        "Teacher are very friendly in nature and really supportive which enhance the student knowledge and skill proportionally",
+        "Qualified and friendly Professors are available for research with students"
+      ]
+    },
+    {
+      "tag": "mobile",
+      "patterns": [
+        "Can we use mobile in khec?",
+        "can we use electronic device during classes?",
+        "Can we make a call during classes?"
+      ],
+      "responses": [
+        "You can use mobile in college but Better not to use such electronic devices during classes",
+        "If there is permission from teacher then you can use it for emergency or study purposes"
+      ]
+    },
+    {
+      "tag": "studytime",
+      "patterns": [
+        "How much time do students spend studying per week?",
+        "What is study period for a week"
+      ],
+      "responses": [
+        "Everyday college start at 7 am till 2 pm where break is provide for 1 hour that means about 7 hour a day(42 hour per week) that include pratical as well as lecture too "
+      ]
+    },
+    {
+      "tag": "Lab",
+      "patterns": [
+        "Is there lab facilties?",
+        "when lab are conducted?",
+        "do we have to make lab report?",
+        "Is lab report complusory?"
+      ],
+      "responses": [
+        "Lab are conducted on the basis of routine for a weekend and lab report are prepared according to teacher information",
+        "Lab report are complusory so lab are coducted as per schedule"
+      ]
+    },
+    {
+      "tag": "Labexam",
+      "patterns": [
+        "Is there lab exam?",
+        "when lab exam are conducted?",
+        "Is lab exam compulsory?"
+      ],
+      "responses": [
+        "Lab exam are conducted on the basis of routine and  teacher information",
+        "Lab  exam are complusory so lab exam are coducted as per schedule for internal evaluation"
+      ]
+    },
+    {
+      "tag": "tour",
+      "patterns": [
+        "Does college organize tour?",
+        "do college take tour?",
+        "What about tour from college",
+        "do college take picnic?",
+        "Does college organize Picnic?"
+      ],
+      "responses": [
+        "College take tour as per department and management team meeting information where picnic is exceptional case",
+        "Educational tour is conducted by college where picnic is exceptional case"
+      ]
+    },
+    {
+      "tag": "rules",
+      "patterns": [
+        "What are basic rule of college?",
+        "is there rules in college?",
+        "Do khec have rules?",
+        "what type of rules for boys and girls",
+        "Can we color our hair?",
+        "is there rules for haircut?",
+        "Can we wear ornaments?"
+      ],
+      "responses": [
+        "The most fundamental rules of college:1.Student should be punctual about college time,exam time,pratical time,assingment submission 2.Properly dress and haircut(no hair color) and no expensive and unwanted ornaments 3.listen to teacher advice 4.proper note preparation 5.attentive in class 6.be polite and humble 7.discipline key 8.Care college property"
+      ]
+    },
+    {
+      "tag": "Assesment",
+      "patterns": [
+        "What type of semester exam are conducted by college?",
+        "what is exam pattern of college?",
+        "Do khec take semester exams?",
+        "What type of exam are taken by college?"
+      ],
+      "responses": [
+        "Two internal exam are taken by colege which are termed as 1.first assesment 2.Second assesment for each semester"
+      ]
+    },
+    {
+      "tag": "Exhibition",
+      "patterns": [
+        "What type of exhibition are conducted by college?",
+        "Do khec conduct exhibition?"
+      ],
+      "responses": [
+        "Usually exhibition are conducted by khec where exbhition covers from sustianable design to advanced technology output",
+        "College also conduct exhibition timely as well as take student to different exhibtion to expand the student knowledge"
+      ]
+    },
+    {
+      "tag": "dress",
+      "patterns": [
+        "Does college provide dress?",
+        "Do college provide dress?",
+        "What is dress code of college",
+        "code of dress"
+      ],
+      "responses": [
+        "Dress are provide by college where you have to consult with jensi sakha(dress section)",
+        "The dress code for college is blue shirt,grey pant,blue sweater and blue coat which will be provide by dress department of college"
+      ]
+    },
+    {
+      "tag": "Competition",
+      "patterns": [
+        "Does college conduct competition?",
+        "Do college organized inter college competition",
+        "What type of competition organzied by college?",
+        "Are sports popular?"
+      ],
+      "responses": [
+        "College conduct different internal as well as inter college competition timely",
+        "Different Comptetion are conducted along which certificate are provided"
+      ]
+    },
+    {
+      "tag": "Compound",
+      "patterns": [
+        "Does college have good compound and environment?",
+        "is there enough area to rest?",
+        "Is there garden in college",
+        "is there enough compund to conduct internal pratical",
+        "is there enough area to play?"
+      ],
+      "responses": [
+        "College compound is preety big and enough to rest or perform internal pratical as well as for playing games",
+        "No doubt on that! You will be preety amazed if you visit here"
+      ]
+    },
+    {
+      "tag": "Strict",
+      "patterns": [
+        "How much strict is college",
+        "do they have strict rules"
+      ],
+      "responses": [
+        "If you are punctual and discipline, the rules won't be strict for you",
+        "Rules are good for every people to maintain the path so yes there is some strict rules"
+      ]
+    },
+    {
+      "tag": "Project",
+      "patterns": [
+        "Do college organize project for student?",
+        "Is there project in college?",
+        "What type of project are conducted by college?",
+        "do we need to do project every semester?"
+      ],
+      "responses": [
+        "Project are performed according to academic programme that you had selected and according to syallbus you have to do project",
+        "According to syllabus project are assigned to students"
+      ]
+    },
+    {
+      "tag": "Farewell",
+      "patterns": [
+        "Do college organize welcome and farewel programs for student?",
+        "What type of welcome and farewel programs are conducted by college?",
+        "do college do farewell to student?"
+      ],
+      "responses": [
+        "Welcome and farewel program are conducted by respective departments as per their decision"
+      ]
+    },
+    {
+      "tag": "orientation",
+      "patterns": [
+        "Do you have an orientation program for freshmen or transfer students?"
+      ],
+      "responses": [
+        "Ofcourse there is orientation program for freshmen or transfer students"
+      ]
+    },
+    {
+      "tag": "Facilities",
+      "patterns": [
+        "what type of facilities are provided by khec college?",
+        "tell me about khec facilties",
+        "do college provide other facilities?",
+        "do college provide well furnished classroom?",
+        "How big are your classes?"
+      ],
+      "responses": [
+        "Some facilities are like: 1.quality canteen 2.well furnished big enough classroom 3.Bus facilities 4.libarary 5.Parking 6.playground 7.well advanced technology lab room 8.well sanitized AC/Fan facilites 9.hygenice restroom 10.quality and fresh environment and many more"
+      ]
+    },
+    {
+      "tag": "Jobs",
+      "patterns": [
+        "what type of jobs are provided by khec college?",
+        "do college provide job?"
+        ],
+      "responses": [
+        "If your qualification meets with the requiremnt for job and internships then college provide the job or internships ",
+        "College provide job and internships if you have adequate qualification"
+      ]
+    },
+    {
+      "tag": "rating",
+      "patterns": [
+        "what is performance of khec college?",
+        "Is there quality education  in khec college?",
+        "How would rate khec college?",
+        "Out of 10 how much would you rate khec college in terms of education?",
+        "What are your college's strengths?"
+      ],
+      "responses": [
+        "About education no any question mark",
+        "Outstanding performace with Outstanding outcome of khec college in terms of education and facilities"
+      ]
+    },
+    {
+      "tag": "NotQualified",
+      "patterns": [
+        "In what condtion student get NQ?",
+        "what are the condition to get NQ?",
+        "How to remove NQ?",
+        "When stduent get NQ?"
+      ],
+      "responses": [
+        "If the student donot perform well in internal exam and donot attend class regularly then he/she is eligible to get NQ on that subject so to remove it, you should attend class regularly and perform well in internal exam and pratical "
+      ]
+    },
+    {
+      "tag": "BackExam",
+      "patterns": [
+        "what are the ways to give back exam?",
+        "what we should do to give back exam?",
+        "how can we give back exam?"
+      ],
+      "responses": [
+        "First of all you have to fill back exam form with each suject charge(more subject more charge) and submit with withheld marksheet to account section and after verfication from account section submit to exam section"
+      ]
+    },
+    {
+      "tag": "RegularExam",
+      "patterns": [
+        "what are the ways to give regular exam?",
+        "what we should do to give regular exam?",
+        "how can we give regular exam?"
+      ],
+      "responses": [
+        "First of all you have to fill exam form and clear the due till date to account section and after verfication from account section submit to exam section"
+      ]
+    },
+    {
+      "tag": "Pandeamic",
+      "patterns": [
+        "what are the measure taken by college during these pandaemic?",
+        "Are students safe during this pandeamic?",
+        "How college is conducted during this pandaemic time?",
+        "what about classes during this pandaemic?",
+        "how khec college is conducting classes during this pandemic time?"
+      ],
+      "responses": [
+        "KHEC is really focused on the student and teacher health so college is conducting both virtual(via teams and zooms) and physical classes(alternate semester wise) under the health safety and precaution where santizer station is build in different gateway of college and face mask is complusory and all the class and lab are well santized and hygiene"
+      ]
+    },
+    {
+      "tag": "vaccination",
+      "patterns": [
+        "Do college provide covid vaccine?",
+        "Are all student covid vaccinated?",
+        "Does college charge for vaccine? "
+      ],
+      "responses": [
+        "There is no charge provision and Mostly student are vaccinated.To get vaccine you should contact to college with your Identity card on date that is scehdule by college "
+      ]
+    },
+    {
+      "tag": "equality",
+      "patterns": [
+        "Do college treated badly to poor student?",
+        "how college treat the weak and poor student?",
+        "how college treat me if i am covid infected?",
+        "i am weak at study,Am i capabale to study at khec?",
+        "What makes this college special?",
+        "What is this college proud of?",
+        "i am poor student,can i enroll there?"
+      ],
+      "responses": [
+        "No matter from what background you are,what nature you belong to,and what you suffered from KHEC always treat the same as we treat to each and every student and there is no chance to make you feel down",
+        "We are here to uplift you, not to degarade you so no any parameter of your background effect the vision of KHEC towards you"
+      ]
+    },
+    {
+      "tag": "discount",
+      "patterns": [
+        "Do college give discount to poor student?",
+        "how can i get discount in college fees?",
+        "is there any discount?"
+      ],
+      "responses": [
+       "There is no such discount provision from college but college provide different scholarship to discipline and economic poor status student as well as return the whole semester amount if you top that semester"
+      ]
+    },
+    {
+      "tag": "result",
+      "patterns": [
+        "how long it take to publish result?",
+        "When do result get published?"
+      ],
+      "responses": [
+       "If everything goes well,Assesment result are usually published with a week or maximum within 15 days and Board exam result are usually published six or seven month from exam or maximum 12 months "
+      ]
+    },
+    {
+      "tag": "Assesmentresult",
+      "patterns": [
+        "When do college publish the result of assesment?",
+        "how long it take to publish assesment result?",
+        "When assesment result get published?",
+        "assesment result please",
+        "What about assesment result?"
+      ],
+      "responses": [
+       "If everything goes well,Assesment result are usually published with a week or maximum within 15 days"
+      ]
+    },
+    {
+      "tag": "aganist",
+      "patterns": [
+       "bastard",
+       "Go to the hell",
+       "Khec is worst college",
+       "i hate khec",
+       "Don't study in khec",
+       "Most strict college",
+       "hatest college"
+      ],
+      "responses": [
+       "Please feel free to reach out to us with any further comments, concerns, or suggestions you wish to share. We would love to make things right if you give us another chance"
+      ]
+    },
+    {
+      "tag": "Boardresult",
+      "patterns": [
+        "When do college publish the result of Board?",
+        "how long it take to publish board exam result?",
+        "When board exam result get published?",
+        "board exam please",
+        "what about board exam?"
+      ],
+      "responses": [
+       "If everything goes well,Board exam result are usually published six or seven month from exam or maximum 12 months"
+      ]
+    },
+    {
+      "tag": "semester",
+      "patterns": [
+        "Is the college on a semester, trimester or quarter system?",
+        "What is study period sequence?"
+      ],
+      "responses": [
+       "It's semester wise system"
+      ]
+    },
+    {
+      "tag": "wifi",
+      "patterns": [
+        "How is the WiFi on college?",
+        "do college provide internet?",
+        "Is there wifi or internet in college"
+      ],
+      "responses": [
+       "college provide internet facilties for study purpose only"
+      ]
+    },
+    {
+      "tag": "studentnature",
+      "patterns": [
+        "Are the students here friendly?",
+        "What type of student are here?",
+        "Is there diversity on campus?",
+        "Do students of different races and classes interact easily?",
+        "How would you describe your fellow students?",
+        "What makes the student body unique?"
+      ],
+      "responses": [
+       "Even though every student belongs from different district,Students are very friendly and respecting nature where collaborative work or group presentations are performed toghther"
+      ]
+    },
+    {
+      "tag": "compare",
+      "patterns": [
+        "What departments or programs have the best reputations?",
+        "Which department or area is best among all?",
+        "is computer is better than electonics?",
+        "which subject is best?"
+      ],
+      "responses": [
+       "All the department are like finger of same hand which have equal importance in their own place"
+      ]
+    },
+    {
+      "tag": "presentation",
+      "patterns": [
+        "How often are collaborative work or group presentations required?",
+        "does college provide group work?",
+        "do we have to do presentation?"
+      ],
+      "responses": [
+       "collaborative work or group presentations are inseprateable things along study courses"
+      ]
+    },
+    {
+      "tag": "traningfee",
+      "patterns": [
+        "what is the fee of autocad and sap traning?",
+        "does college provide different tranings with fee?",
+        "do college take charge/fee for tranings?"
+      ],
+      "responses": [
+       "Training fee are addressed by specific departments"
+      ]
+    },
+    {
+      "tag": "traning",
+      "patterns": [
+        "For the training classes will the library computer be operated?",
+        "do college provide extra tranings?",
+        "What are the extra tranings provide by college?",
+        "Is there extra tranings?"
+      ],
+      "responses": [
+       "different tranings likes autocad,sap,java,matlab,python etc are providede by college where Training fee are addressed by specific departments and needed things or devices will be provide by college"
+      ]
+    },
+    {
+      "tag": "examroutine",
+      "patterns": [
+        "Exam routine for 1st/first semester",
+        "Exam routine for 2nd/second semester",
+        "Exam routine for 3rd/third semester",
+        "Exam routine for 4th/fourth semester",
+        "Exam routine for 5th/fifth semester",
+        "Exam routine for 6th/sixth semester",
+        "Exam routine for 7th/seventh semester",
+        "Exam routine for 8th/eight semester"
+
+      ],
+      "responses": [
+       "Please visit college website for detail exam routine and best of luck for exam"
+      ]
+    },
+    {
+      "tag": "oldquestion",
+      "patterns": [
+        "old question for 1st/first semester",
+        "old question for 2nd/second semester",
+        "old question for 3rd/third semester",
+        "old question for 4th/fourth semester",
+        "old question for 5th/fifth semester",
+        "old question for 6th/sixth semester",
+        "old question for 7th/seventh semester",
+        "old question for 8th/eight semester"
+
+      ],
+      "responses": [
+       "Please concerned college department for old question or stationary for hardcopy question sets"
+      ]
+    },
+    {
+      "tag": "method",
+      "patterns": [
+        "Are your classes lecture-based or discussion-based?",
+        "what are the classes based on?",
+        "in what way the teacher teach to student?"
+      ],
+      "responses": [
+       "As per need of time and study course we can go through any based that may be lecture,pratical,field visit,discussion or visual which help the student"
+      ]
+    },
+    {
+      "tag": "loan",
+      "patterns": [
+        "do college provide study loan to economically poor students?",
+        "Is there loan system or provision?"
+      ],
+      "responses": [
+       "Sorry to say but there is no such system but we are working on that for betterment for economically poor student and hope we will be on it asap"
+      ]
+    },
+    {
+      "tag": "Time",
+      "patterns": [
+        "What is college time?",
+        "what time college or class started?",
+        "What time college gate is closed?",
+        "what is starting time of college?",
+        "when college time get finish?",
+        "what time college get over?",
+        "shift","time",
+        "tell me about shift of college?"
+      ],
+      "responses": [
+       "During summer college gate close and class get started at 7:15 am and during winter college gate close and class get started at 8:15 am and get over at 1:55pm"
+      ]
+    },
+    {
+      "tag": "due",
+      "patterns": [
+        "update my due amounts",
+        "How can i know about my due amount",
+        "how much money should i pay?"
+
+      ],
+      "responses": [
+       "Please login to college mis for detail info or concerned to account section"
+      ]
+    }
+    
+  ]
+  
+}

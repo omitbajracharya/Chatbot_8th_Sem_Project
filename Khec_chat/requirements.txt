@@ -1,0 +1,1 @@
+=>pip install nltk,tensorflow,keras,pickle,re,mysql.connector,numpy

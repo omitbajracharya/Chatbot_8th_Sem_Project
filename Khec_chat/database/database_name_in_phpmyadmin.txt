@@ -1,0 +1,3 @@
+Database Name  :   chatbot_query
+
+//=>create database in xampp phpmyadmin with name "chatbot_query"

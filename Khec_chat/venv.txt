@@ -1,0 +1,4 @@
+#virtual environment=>
+->python -m venv venv
+->venv/Scripts/activate   =>for activating virtual environment
+->deactivate  =>for deactivating virtual environment
