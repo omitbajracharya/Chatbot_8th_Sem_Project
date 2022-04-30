@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 import mysql.connector
 import os
 from tkinter import ttk, messagebox
-
+from datetime import date
 ####################### Chatbot part imports ###################
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -21,6 +21,7 @@ from keras.models import load_model
 model = load_model('chatbot_model.h5')
 import json
 import random
+from datetime import date, datetime
 # import mysql.connector
 ################################################################
 
@@ -104,11 +105,18 @@ def predict_class(sentence, model):
     return return_list
     
 def getResponse(ints, intents_json,tagging=False):
+    global block
+    global emailid
+    mydb = mysql.connector.connect(host="localhost", user="root", passwd="",database="chatbot")
     if tagging == True:
         tag = ints
     else:
         tag = ints[0]['intent']
-    
+
+    if tag == 'aganist':
+        block=1        
+
+
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if(i['tag'] == tag):
@@ -142,27 +150,72 @@ def chatbot_response(text):
     # print(ints[0])  #==>dicionary of pattern class with high probability
     prob=float(ints[0]['probability']) #filtering the highest
     print(type(prob))
-    if prob > 0.80:
+    if prob > 0.7775:
         res = getResponse(ints, intents)
     else:
         res="Hey, I'm only a bot, I need things simple.Could you please place query more detailly or Exclude slang words?,Thank you"  
 
         mydb = mysql.connector.connect(host="localhost", user="root", passwd="",database="chatbot")
-        print("xyyyzzz====",emailLogin)
+        # print("xyyyzzz====",emailLogin)
         mycursor = mydb.cursor()
         mycursor.execute(f"select * from `new_query` where `Query`='{text}' AND `email`='{emailLogin}'")
         lst_cursor=list(mycursor)
         l=len(lst_cursor)
         
-
+        # riyabudhathoki2@gmail.com
+        # print(l)
         if l!=0:
-            print(lst_cursor[0][2])
-            val=lst_cursor[0][2]+1
+            c=lst_cursor[0][5]
+            prevDateQuery=str(lst_cursor[0][4])[:10]
+            # print(prevDateQuery)
+            # mycursor = mydb.cursor()
+            # mycursor.execute(f"SELECT CURRENT_DATE")
+
+            
+            now = datetime.today()
+            now=now.strftime("%Y-%m-%d %H:%M:%S")
+
+            today = str(date.today())
+            if prevDateQuery!=today:
+                c=1  
+                
+                mycursor = mydb.cursor()
+                mycursor.execute(f"UPDATE `new_query` SET `Entry_at`= '{now}',`counter`='{c}' WHERE `Query`='{text}' AND `email`='{emailLogin}'")
+                mydb.commit()
+
+            # print(today)
+            # print(prevDateQuery==today)
+            # print(lst_cursor[0][3])
+            val=lst_cursor[0][3]
+            if c==2:
+                messagebox.showwarning("Warning", "We will go through this topic later on!!! So for today please procceed to ask other questions for other topic...OtherWise you will be block for today...")
+            elif c==3:
+                val+=1
+                mycursor = mydb.cursor()
+                mycursor.execute(f"UPDATE `new_query` SET `counter`= '0' WHERE `Query`='{text}' AND `email`='{emailLogin}'")
+                mydb.commit()
+                
+                mycursor = mydb.cursor()
+                mycursor.execute(f"UPDATE `new_user_regis` SET `status`= 0, `time`='{now}' where `email`='{emailLogin}'")
+                mydb.commit()
+
+
+                base.destroy()
+                messagebox.showerror("Blocked!!!", "*For Today, You have been block by admin...")
+                main_account_screen()
+                
+            val+=1
+            c+=1
+            mycursor = mydb.cursor()
+            mycursor.execute(f"UPDATE `new_query` SET `counter`='{c}' WHERE `Query`='{text}' AND `email`='{emailLogin}'")
+            mydb.commit()
+
             print("updating...")
-            print(val)
+            print("Updated value is::",val,type(val))
             mycursor = mydb.cursor()
             mycursor.execute(f"UPDATE `new_query` SET `freq`= {val} where `Query`='{text}' AND `email`='{emailLogin}'")
             mydb.commit()
+            
         else:
             print("inserting...")
             mycursor = mydb.cursor()
@@ -181,7 +234,10 @@ def send(*args):
     global name_var
     global EntryBox
     global ChatLog
+    global block
+    global emailid
     msg=name_var.get()
+
     # print(msg)
     # after leave(msg)
 
@@ -200,9 +256,17 @@ def send(*args):
         ChatLog.config(foreground="#442265", font=("Verdana", 12 ))
         res = chatbot_response(msg)
         ChatLog.insert(END, "Bot: " + res + '\n\n')
-
+        if block==1:
+            mydb = mysql.connector.connect(host="localhost", user="root", passwd="",database="chatbot")
+            mycursor = mydb.cursor()
+            mycursor.execute(f"UPDATE `new_user_regis` SET `block`= '1' WHERE `email`='{emailid}'")
+            mydb.commit()
+            messagebox.showinfo("BLOCKED!!!", "Don't use slang words... So for now you have been blocked. visit college & lets discuss your problem...")
+            base.destroy()
+            main_account_screen()
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
+
 
 # ----------------
 
@@ -232,8 +296,8 @@ def chatbot(*args):
     words = pickle.load(open('words.pkl','rb'))
     classes = pickle.load(open('classes.pkl','rb'))
     bot_name = "khec_Bot"
-
     #--------
+    
     base.title(bot_name)
     base.geometry("400x500")
     base.resizable(width=FALSE, height=FALSE)
@@ -277,29 +341,59 @@ def chatbot(*args):
 ###########################  Chatbot Section ends here...........!!!  #####################################
 
 
-def Authenticate():
+def Authenticate(*args):
     global root
     global emailid
     global msgLabel
+    global base
     emailVal=emailid.get()
     print(emailVal)
     if emailVal=="Place your registered email...":
         msgLabel.config(text = "*email???",foreground = "Red",font=('Helveticabold',13))
     else:
-        # print(emailVal)
+        print("***",emailVal,"***")
         mydb = mysql.connector.connect(host="localhost", user="root", passwd="",database="chatbot")
         mycursor = mydb.cursor()
-        mycursor.execute(f"SELECT `id` FROM `new_user_regis` WHERE `email` = '{emailVal}'")
-        if len(list(mycursor))!=0:
-            #successful login
-            root.destroy()
-            chatbot()
-            # os.system('python chatbot.py')
+        mycursor.execute(f"SELECT * FROM `new_user_regis` WHERE `email` = '{emailVal}'")
+        list1=list(mycursor)
+    
+        
+    
+        if list1[0][4]==0:    #not block then go to other process
+            if len(list1)!=0:   #email register is there...it may have status 0 or 1
+                # print("----------status:",list1[0][2],type(list1[0][2]))
+                status=list1[0][2]
+                mycursor = mydb.cursor()
+                mycursor.execute(f"UPDATE `new_query` SET `counter`= 0 WHERE `counter`>=4")
+                mydb.commit()
+                if status==0:  #status==0
+                    now = str(date.today())
+                    prev=str(list1[0][3])[:10]
+                    root.destroy()
+                    if now!=prev:
+                        ###################
+                        now=date.today()
+                        now=now.strftime("%Y-%m-%d %H:%M:%S")
+                        mycursor = mydb.cursor()
+                        mycursor.execute(f"UPDATE `new_user_regis` SET `status`= 1,`time`='{now}' WHERE `email`='{emailVal}'")
+                        mydb.commit()
+                        chatbot()
+                        # print("***",emailVal,"***nepal***")            
+                    else:
+                        # msgLabel.config(text = "*This email is block by admin...",foreground = "Red",font=('Helveticabold',13))
+                        messagebox.showerror("Blocked As Spammer!!!", "*This email is block for today <-- (Admin)")
+                        main_account_screen()
+                else:    #status==1
+                    #successful login
+                    root.destroy()
+                    chatbot()
+                # os.system('python chatbot.py')
+            else:
+                # messagebox.showerror("Error", "Please enter valid email address.")
+                # Displaying the success message
+                msgLabel.config(text = "*This email is not registered yet.",foreground = "Red",font=('Helveticabold',13))
         else:
-            # messagebox.showerror("Error", "Please enter valid email address.")
-            # Displaying the success message
-            msgLabel.config(text = "*This email is not registered yet.",foreground = "Red",font=('Helveticabold',13))
-
+            messagebox.showerror("Blocked For Slang words!!!", "*You have been blocked...Please visit college for discussion of your problem & solve all the misunderstanding...")
 # def Registration(*args):
 #     # print("Nepal")
 #     global root
@@ -332,8 +426,6 @@ def login(*args):
     # delete_mainscreen()
     
     
-
-    
     # Creating object of tk class  
     root = Tk()
 
@@ -360,6 +452,7 @@ def login(*args):
 
     loginbutton = Button(root, text="Login", command=Authenticate, width=30,font=('Helveticabold',18),fg="white",bg="green")
     loginbutton.place(x=60,y=100)
+    root.bind('<Return>', Authenticate)   #if enter key is pressed call function
     # loginbutton.grid(row=4, column=2, padx=5, pady=5)
 
     # registerbutton =Button(root, text="Register", command=Registration, width=20,bg="deepskyblue3",foreground="red")
@@ -474,6 +567,9 @@ def validOTP():
         mycursor = mydb.cursor()
         mycursor.execute(f"INSERT INTO `new_user_regis`(`email`) VALUES ('{Email}')")
         mydb.commit()
+        messagebox.showinfo("💟💟Successfully Registered💟💟", "You have been Successfully registered to our system. Now You can join us with this email Id!!!")
+        regis.destroy()
+        login()
         # mycursor.execute(f"SELECT `id` FROM `new_user_regis` WHERE `email` = 'riyabudhathoki2@gmail.com'")
         # ID = list(mycursor)[0][0]
         # print(ID)
@@ -483,6 +579,7 @@ def validOTP():
         #enter your email....email->status---your are block....no email ->register...select-email with status 1->welcome....chatpage
     else:
         regis.otpLabel.config(text="*INVALID OTP",fg="red")
+
 
 def register(*args):
     # global root
@@ -512,6 +609,8 @@ def register(*args):
 # Designing Main(first) window
  
 def main_account_screen():
+    global block
+    block=0
     global main_screen
     main_screen = Tk()
     main_screen.geometry("300x250")
